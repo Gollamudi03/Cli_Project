@@ -9,15 +9,18 @@ class CLI
         parks.scrape_data
         opening_greeting
         parks_selector
-        leave_msg
+        good_bye
     end
 
     def opening_greeting
         puts "Welcome To National Parks !!!"
         sleep 1
+        puts ""
         puts "There are some beautiful National Parks to visit around Michigan."
         sleep 1
+        puts ""
         puts"******************************************************************"
+        puts ""
         puts "The 6 beautiful Parks of Michigan you need to visit: "
         sleep 3
     end
@@ -46,9 +49,11 @@ class CLI
     end
 
     def more_info(place)
-        puts "#{place.name} sounds great!"
-        puts "Would you like more info?"
+        puts "#{place.name}"
+        puts ""
+        puts "Would you like to know more details about #{place.name}?"
         sleep(1)
+        puts ""
         puts "enter the number or write exit."
 
         puts "1. Address"
@@ -70,12 +75,12 @@ class CLI
                     puts "#{place.directions}"
                 end
             else
-                puts "Enter the appropriate number or exit."
+                puts "Enter the appropriate number or write exit."
             end
         end
     end
 
-    def leave_msg
-        puts "Thanks for coming"
+    def good_bye
+        puts "Thank You. Stay Safe"
     end
 end

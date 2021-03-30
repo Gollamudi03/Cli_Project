@@ -30,8 +30,10 @@ class Scraper
 
             if directions.empty?
              directions = "Visitor Centers are Closed
-    The visitor centers are closed for the winter.Winter Road Conditions
-    All park roads (except Sand Point Road) and eastern portion of H-58 are unplowed & are closed to vehicles except snowmobiles. Roads reopen when snow melts (April/May). See road map handout: https://www.nps.gov/piro/planyourvisit/winter-road-closures.htm"
+    The visitor centers are closed for the winter.
+
+    Winter Road Conditions
+    Roads reopen when snow melts (April/May). See road map handout: https://www.nps.gov/piro/planyourvisit/winter-road-closures.htm"
             end
             if opening_hrs == ""
                 opening_hrs = "COVID-19 Response
